@@ -1,0 +1,200 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+ 
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+ 
+ 
+%------------------------------------------------------------------ Variablen
+ 
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+ 
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+ 
+\pagestyle{empty}
+\begin{document}
+ 
+ 
+\thispagestyle{empty}
+%-------------------------------------------------------------
+ 
+\section*{Start}
+ 
+\simpleheader{headercolour}{Andrei}{Petrea}{Student}{white}
+ 
+ 
+ 
+%------------------------------------------------
+ 
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+ 
+\setlength{\columnsep}{1cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+ 
+\paracolbackgroundoptions
+ 
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+ 
+ 
+ 
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic[xshift=-0.33cm,yshift=-1cm]{3cm}{5cm}{belea.png}
+\end{center}
+\begin{flushleft}
+ 
+\bg{cvgreen}{white}{Contact} \\[0.5em]
+\infobubble{\faPhone}{cvgreen}{white}{\href{tel:+40725195189}{\textbf{+40725195189}}}\\[0.5em]
+\infobubble{\faAt}{cvgreen}{white}{\href{mailto:scpetrea@gmail.com}{\textbf{scpetrea@gmail.com}}}\\[0.5em]
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/petrea-andrei-0048b9198/}{\textbf{Petrea Andrei}}}\\[0.5em]
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/ReGeLePuMa/}{\textbf{ReGeLePuMa}}}\\[0.5em]
+ 
+\bigskip
+ 
+\bg{cvgreen}{white}{About me}\\[0.5em]
+ 
+{\footnotesize
+An innovative, hard-working and goal-oriented computer science student, dreaming about operating systems, fluent
+in English, flexible in any work environment, with excellent teamwork and interpersonal capabilities, with a comprehensive
+portfolio of projects, being adept in both high-level applications and low-level software
+and a desire to further challenge themselves}
+\bigskip
+ 
+ 
+ 
+ 
+ 
+\bigskip
+ 
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+ 
+Linux ~•~ C Programming ~•~ Python ~•~ OOP
+ 
+\bigskip
+ 
+ 
+ 
+\bigskip
+ 
+ 
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+ 
+\textbf{Artificial Intelligence}\\
+\textbf{CyberSecurity} \\
+\textbf{Machine Learning} 
+ 
+\bigskip
+\bigskip
+ 
+\begingroup
+ 
+\setlength{\tabcolsep}{3pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+ 
+\bg{cvgreen}{white}{Languages}\\[0.3em]
+\begin{tabular}{l | ll}
+\textbf{Romanian} & & {\phantom{x}\footnotesize native language} \\
+\textbf{English} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{cvgreen}{2}{\tiny}
+\end{tabular}
+\bigskip
+\bigskip
+\end{flushleft}
+\endgroup
+ 
+\phantom{turn the page}
+ 
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+ 
+\small
+ 
+\section*{Education}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--present}{Bachelor of Science in Computer Science}{}{University Politehnica Bucharest \color{cvred}}{Undergraduate sophomore student currently progressing towards a BSc in Computer Science at the Faculty of Automatic Control and Computer Science \newline 
+    \textbf{Relevant Coursework:} \textit{Operating System Utilisation, Operating Systems, Data Structures and Algorithms, Object Oriented Programming, Algorithm Design and Analysis, Programming Paradigms} }{} \\
+\end{tabular}
+\vspace{0.5em}
+ 
+ 
+\section*{Projects}
+ 
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2023}{Digit Reader}{Python, JavaScript, HTML/CSS}{}{• Digit recogniser using \textbf{Machine Learning}\newline• Users are able to send photos using a web interface written in vanilla \textbf{JavaScript} and see their previous photos in a slideshow \newline• Written as a collaborative effort in a \textbf{team} of four }{} \\
+    \cvevent{2023}{School Catalogue}{Java}{}{• School catalogue written in Java \newline• Features a GUI utilizing the \textbf{Swing} library comprising of 4 pages, being able to be dynamically updated }{} \\
+    \cvevent{2022}{HackITall: Experiential shopping}{Python, Three.js}{}{• 3-man Hackathon project for an online retail shop.\newline• Features a \textbf{fully-rendered 3D shop} with various custom-made articles of clothing\newline• An \textbf{artificial intelligence} algorithm scans for products which are more likely for the consumer to purchase after looking at certain items}{} \\
+    \cvevent{2022}{Terminal Browser}{C, NCurses}{}{• Browser-like terminal application written in the C programming language.\newline• Utilises an \textbf{HTML-parser} to display in an \textbf{NCurses} window a site in accordance with its CSS-style \newline
+    • Provides a \textbf{checksum} security feature to detect malicious sites}{}
+\end{tabular}
+ 
+\vspace{0.5em}
+ 
+\begin{minipage}[t]{0.30\textwidth}
+\section*{Certificates}
+\begin{tabular}{r p{0.70\textwidth} c}
+ 
+    \cvdegree{ Autumn 2022-2023}{Web Programming 101}{Certified}{hackademy \color{headerblue}}{}{} \\
+    \cvdegree{Spring 2022}{Python Programming 101}{Certified}{hackademy \color{headerblue}}{}{} \\
+    \cvdegree{Autumn 2021-2022}{CCNA: Introduction to Networks}{Certified}{hackademy \color{headerblue}}{}{} \\
+ 
+ 
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Computer skills}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{C/C++}  &        \textbf{Intermediate}\\\\\bigskip
+     \bg{skilllabelcolour}{iconcolour}{Java} & \textbf{Intermediate}\\\bigskip
+     \bg{skilllabelcolour}{iconcolour}{Python} & \textbf{Intermediate}\\\bigskip
+     \bg{skilllabelcolour}{iconcolour}{JavaScript} & \textbf{Beginner}\\\bigskip 
+     \bg{skilllabelcolour}{iconcolour}{Git} & \textbf{Beginner}\\\bigskip 
+\end{tabular}
+\end{minipage}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ % Whitespace before final footer
+ 
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Andrei Petrea \icon{\faMapMarker}{cvgreen}{} Bragadiru  \icon{\faEnvelopeO}{cvgreen}{} \href{mailto:scpetrea@gmail.com}{\protect\url{scpetrea@gmail.com}} \icon{\faPhone}{cvgreen}{} \href{tel:+40725195189}{+40725195189}
+}
+\end{center}
+\end{minipage}
+ 
+\end{paracol}
+ 
+\end{document}
